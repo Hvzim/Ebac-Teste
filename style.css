@@ -1,0 +1,265 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #18181b;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NAVBAR */
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.link a {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #1d4ed8;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    background: #483a96;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #6d57c5;
+}
+
+/* CONTAINERS */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2.5rem 1rem;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+header h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.about {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #ddd;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#services .card {
+    flex: 1 1 280px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#services .card,
+.service-card .card {
+    background: #2c2c2c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    transition: smooth;
+}
+
+#services .card:hover,
+.service-card .card:hover {
+    transform: translateY(-8px);
+    background: #383838;
+}
+
+#services .card h3,
+.service-card .card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#services .card p,
+.service-card .card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#services .card a,
+.service-card .card a {
+    color: #4da6ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#services .card a:hover,
+.service-card .card a:hover {
+    text-decoration: underline;
+}
+
+
+.depoimentos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.depoimentos .card {
+    background: #2c2c2c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    transition: smooth;
+}
+
+.depoimentos .card:hover {
+    transform: translateY(-8px);
+    background: #383838;
+}
+
+.depoimentos .card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.depoimentos .card p {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+footer {
+    background-color: #27272a;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border-top: 2px solid #fff;
+}
+
+footer .column .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .column .socials a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .column .socials a:hover {
+    color: #1d4ed8;
+}
+
+footer .column h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .column a {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+footer .column a:hover {
+    color: #1d4ed8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
