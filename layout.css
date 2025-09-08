@@ -1,0 +1,259 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #18181b;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NAVBAR */
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.navbar__link {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar__link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #1d4ed8;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease;
+}
+
+.navbar__link:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    background: #483a96;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #6d57c5;
+}
+
+/* CONTAINERS */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2.5rem 1rem;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.header__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.header__title--outlined {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+.header__subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about__text {
+    font-size: 1.1rem;
+    color: #ddd;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.services__card {
+    background: #2c2c2c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    transition: smooth;
+}
+
+.services__card:hover {
+    transform: translateY(-8px);
+    background: #383838;
+}
+
+.services__card-title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.services__card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.services__card-link {
+    color: #4da6ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.services__card-link:hover {
+    text-decoration: underline;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.testimonials__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.testimonials__card {
+    background: #2c2c2c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonials__card:hover {
+    transform: translateY(-8px);
+    background: #383838;
+}
+
+.testimonials__card-title {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.testimonials__card-text {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #27272a;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border-top: 2px solid #fff;
+}
+
+.footer__column-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__social-link {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer__social-link:hover {
+    color: #1d4ed8;
+}
+
+.footer__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #1d4ed8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
