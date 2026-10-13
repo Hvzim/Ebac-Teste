@@ -1,0 +1,36 @@
+@use 'variaveis' as vars;
+
+@mixin botao-padrao {
+  padding: 0.8rem 1.6rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: vars.$cor-primaria;
+  color: vars.$cor-texto;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background vars.$transicao-padrao;
+
+  &:hover {
+    background: vars.$cor-primaria-hover;
+  }
+}
+
+@mixin espacamento-inferior($valor: vars.$espacamento) {
+  margin-bottom: $valor;
+}
+
+@mixin cartao {
+  padding: vars.$espacamento;
+  border-radius: vars.$raio-padrao;
+  background: vars.$cor-card;
+  box-shadow: vars.$sombra-card;
+  text-align: center;
+  transition: transform vars.$transicao-padrao,
+    background vars.$transicao-padrao;
+
+  &:hover {
+    transform: translateY(-8px);
+    background: vars.$cor-card-hover;
+  }
+}

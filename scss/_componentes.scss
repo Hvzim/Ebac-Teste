@@ -1,0 +1,29 @@
+@use 'variaveis' as vars;
+@use 'mixins' as mix;
+
+.btn {
+  @include mix.botao-padrao;
+}
+
+.hero {
+  &__title {
+    @include mix.espacamento-inferior(
+      vars.$espacamento * 0.5
+    );
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    span {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+    }
+  }
+
+  &__description {
+    max-width: 800px;
+    margin: 0 auto;
+    color: vars.$cor-texto-suave;
+    font-size: 1.1rem;
+  }
+}
